@@ -1,0 +1,25 @@
+<svg width="600" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="450" fill="#f5ebe0"/>
+  
+  <!-- Coffee bar counter -->
+  <rect x="100" y="280" width="400" height="40" rx="5" fill="#c8956c"/>
+  
+  <!-- Coffee cups -->
+  <ellipse cx="200" cy="260" rx="40" ry="30" fill="#2c1810"/>
+  <ellipse cx="200" cy="260" rx="35" ry="25" fill="#f5ebe0"/>
+  <ellipse cx="200" cy="260" rx="30" ry="20" fill="#c8956c"/>
+  
+  <ellipse cx="400" cy="260" rx="40" ry="30" fill="#2c1810"/>
+  <ellipse cx="400" cy="260" rx="35" ry="25" fill="#f5ebe0"/>
+  <ellipse cx="400" cy="260" rx="30" ry="20" fill="#c8956c"/>
+  
+  <!-- Steam wisps -->
+  <path d="M185 230 Q190 210 185 190 Q180 170 185 150" stroke="#d4a853" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M200 225 Q205 205 200 185 Q195 165 200 145" stroke="#d4a853" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M385 230 Q390 210 385 190 Q380 170 385 150" stroke="#d4a853" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M400 225 Q405 205 400 185 Q395 165 400 145" stroke="#d4a853" stroke-width="3" fill="none" opacity="0.6"/>
+  
+  <!-- Text -->
+  <text x="300" y="410" text-anchor="middle" fill="#999" font-family="Arial" font-size="16">Your photo here</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg width="600" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="450" fill="#f5ebe0"/>
+  
+  <!-- Sangria bottle -->
+  <ellipse cx="250" cy="200" rx="35" ry="80" fill="#2c1810"/>
+  <rect x="235" y="120" width="30" height="40" rx="5" fill="#2c1810"/>
+  <ellipse cx="250" cy="200" rx="30" ry="75" fill="#c8956c"/>
+  
+  <!-- Glasses -->
+  <path d="M380 280 L360 180 L440 180 L420 280 Z" fill="#d4a853"/>
+  <path d="M390 275 L375 190 L425 190 L410 275 Z" fill="#f5ebe0"/>
+  <rect x="395" y="280" width="10" height="30" fill="#d4a853"/>
+  <ellipse cx="400" cy="315" rx="25" ry="8" fill="#d4a853"/>
+  
+  <path d="M140 280 L120 180 L200 180 L180 280 Z" fill="#d4a853"/>
+  <path d="M150 275 L135 190 L185 190 L170 275 Z" fill="#f5ebe0"/>
+  <rect x="155" y="280" width="10" height="30" fill="#d4a853"/>
+  <ellipse cx="160" cy="315" rx="25" ry="8" fill="#d4a853"/>
+  
+  <!-- Fruit slices in glasses -->
+  <circle cx="400" cy="220" r="8" fill="#e0b896"/>
+  <circle cx="160" cy="220" r="8" fill="#e0b896"/>
+  
+  <!-- Text -->
+  <text x="300" y="410" text-anchor="middle" fill="#999" font-family="Arial" font-size="16">Your photo here</text>
+</svg>

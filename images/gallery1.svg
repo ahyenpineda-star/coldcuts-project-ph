@@ -1,0 +1,26 @@
+<svg width="600" height="450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="450" fill="#f5ebe0"/>
+  
+  <!-- Abstract grazing table -->
+  <rect x="50" y="80" width="500" height="280" rx="10" fill="#c8956c"/>
+  
+  <!-- Cheese circles -->
+  <circle cx="120" cy="180" r="40" fill="#d4a853"/>
+  <circle cx="250" cy="150" r="35" fill="#e0b896"/>
+  <circle cx="380" cy="190" r="45" fill="#d4a853"/>
+  <circle cx="480" cy="160" r="30" fill="#e0b896"/>
+  
+  <!-- Meat rectangles -->
+  <rect x="100" y="240" width="80" height="25" rx="5" fill="#2c1810"/>
+  <rect x="220" y="230" width="70" height="30" rx="5" fill="#2c1810"/>
+  <rect x="340" y="245" width="90" height="20" rx="5" fill="#2c1810"/>
+  
+  <!-- Fruit dots -->
+  <circle cx="180" cy="280" r="12" fill="#d4a853"/>
+  <circle cx="300" cy="270" r="15" fill="#c8956c"/>
+  <circle cx="420" cy="285" r="10" fill="#d4a853"/>
+  
+  <!-- Text -->
+  <text x="300" y="410" text-anchor="middle" fill="#999" font-family="Arial" font-size="16">Your photo here</text>
+</svg>

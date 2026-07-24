@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="ab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5ebe0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e0d5c8;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#ab)"/>
+  <rect x="50" y="50" width="500" height="300" rx="12" fill="#2c1810" opacity="0.08"/>
+  <circle cx="150" cy="180" r="40" fill="#c8956c" opacity="0.3"/>
+  <circle cx="300" cy="200" r="55" fill="#d4a853" opacity="0.25"/>
+  <circle cx="450" cy="170" r="35" fill="#c8956c" opacity="0.3"/>
+  <rect x="100" y="260" width="400" height="20" rx="10" fill="#c8956c" opacity="0.15"/>
+  <rect x="150" y="300" width="300" height="15" rx="7" fill="#d4a853" opacity="0.12"/>
+  <text x="300" y="360" font-family="Georgia, serif" font-size="14" fill="#6b5344" text-anchor="middle" opacity="0.5">Your grazing table photo here</text>
+</svg>
