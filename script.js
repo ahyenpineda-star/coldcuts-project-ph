@@ -112,12 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Lightbox
   const galleryItems = document.querySelectorAll('.gallery-item');
   let currentIndex = 0;
-  let lightbox, lightboxImg, lightboxCounter;
+  let lightbox, lightboxBackdrop, lightboxImg, lightboxCounter;
 
   function createLightbox() {
     lightbox = document.createElement('div');
     lightbox.className = 'lightbox';
     lightbox.innerHTML = `
+      <div class="lightbox-backdrop"></div>
       <button class="lightbox-close" aria-label="Close">&times;</button>
       <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
       <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
@@ -126,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(lightbox);
 
+    lightboxBackdrop = lightbox.querySelector('.lightbox-backdrop');
     lightboxImg = lightbox.querySelector('.lightbox-img');
     lightboxCounter = lightbox.querySelector('.lightbox-counter');
 
@@ -166,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
     lightboxCounter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+    lightboxBackdrop.style.backgroundImage = `url('${img.src}')`;
   }
 
   galleryItems.forEach((item, index) => {

@@ -555,7 +555,7 @@ h1, h2, h3, h4 {
 .lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.92);
   z-index: 10000;
   display: flex;
   align-items: center;
@@ -563,12 +563,22 @@ h1, h2, h3, h4 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease;
-  backdrop-filter: blur(8px);
 }
 
 .lightbox.active {
   opacity: 1;
   visibility: visible;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(40px) brightness(0.4);
+  transform: scale(1.2);
+  transition: background-image 0.5s ease;
+  z-index: 0;
 }
 
 .lightbox-img {
@@ -578,7 +588,9 @@ h1, h2, h3, h4 {
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
   transform: scale(0.92);
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .lightbox.active .lightbox-img {
