@@ -383,6 +383,17 @@
         .catch(err => console.log('SW registration failed:', err));
     }
   </script>
-  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script src="https://www.tiktok.com/embed.js"></script>
+  <script>
+    if (typeof tiktokEmbedLoaded === 'undefined') {
+      window.tiktokEmbedLoaded = false;
+      window.addEventListener('load', function() {
+        if (!window.tiktokEmbedLoaded && typeof tiktokEmbed !== 'undefined' && tiktokEmbed.reprocess) {
+          tiktokEmbed.reprocess();
+          window.tiktokEmbedLoaded = true;
+        }
+      });
+    }
+  </script>
 </body>
 </html>

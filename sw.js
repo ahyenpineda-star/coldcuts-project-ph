@@ -1,4 +1,4 @@
-const CACHE_NAME = 'coldcuts-v2';
+const CACHE_NAME = 'coldcuts-v3';
 
 const BASE = new URL(self.registration.scope).pathname;
 
@@ -45,6 +45,20 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
+  if (event.request.destination === 'document') {
+    event.respondWith(
+      fetch(event.request).then(response => {
+        const responseClone = response.clone();
+        caches.open(CACHE_NAME).then(cache => {
+          cache.put(event.request, responseClone);
+        });
+        return response;
+      }).catch(() => {
+        return caches.match(event.request);
+      })
+    );
+    return;
+  }
   event.respondWith(
     caches.match(event.request).then(cached => {
       return cached || fetch(event.request).then(response => {
@@ -56,10 +70,6 @@ self.addEventListener('fetch', event => {
         }
         return response;
       });
-    }).catch(() => {
-      if (event.request.destination === 'document') {
-        return caches.match(BASE + 'index.html');
-      }
     })
   );
 });
