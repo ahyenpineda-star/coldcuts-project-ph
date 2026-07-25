@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.service-card, .package-card, .gallery-item');
+    const elements = document.querySelectorAll('.service-card, .package-card');
     elements.forEach(el => {
       const rect = el.getBoundingClientRect();
       if (rect.top < window.innerHeight * 0.85) {
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  document.querySelectorAll('.service-card, .package-card, .gallery-item').forEach(el => {
+  document.querySelectorAll('.service-card, .package-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   });
