@@ -481,6 +481,74 @@ h1, h2, h3, h4 {
   transform: scale(1.08);
 }
 
+/* TikTok Section */
+.tiktok-section {
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.tiktok-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.tiktok-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent);
+  margin: 0.75rem auto 0;
+}
+
+.tiktok-section .section-subtitle {
+  margin-bottom: 2rem;
+}
+
+.tiktok-section .section-subtitle a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.tiktok-section .section-subtitle a:hover {
+  color: var(--accent-light);
+}
+
+.tiktok-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tiktok-embed-wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.tiktok-embed-wrapper .tiktok-embed {
+  width: 100% !important;
+  min-width: unset !important;
+  max-width: 400px !important;
+}
+
+.tiktok-embed-wrapper iframe {
+  border-radius: 12px !important;
+}
+
+@media (max-width: 768px) {
+  .tiktok-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
 /* Contact */
 .contact {
   background: var(--primary);
