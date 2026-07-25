@@ -1,24 +1,27 @@
-const CACHE_NAME = 'coldcuts-v1';
+const CACHE_NAME = 'coldcuts-v2';
+
+const BASE = new URL(self.registration.scope).pathname;
+
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/feedback.html',
-  '/style.css',
-  '/script.js',
-  '/manifest.json',
-  '/images/logo.jpg',
-  '/images/hero-bg.jpg',
-  '/images/ref.jpg',
-  '/images/about.svg',
-  '/images/favicon-32x32.png',
-  '/images/favicon-16x16.png',
-  '/images/apple-touch-icon.png',
-  '/images/android-chrome-192x192.png',
-  '/images/android-chrome-512x512.png',
-  '/images/feedback1.jpg',
-  '/images/feedback2.jpg',
-  '/images/feedback3.jpg',
-  '/images/feedback4.jpg'
+  BASE,
+  BASE + 'index.html',
+  BASE + 'feedback.html',
+  BASE + 'style.css',
+  BASE + 'script.js',
+  BASE + 'manifest.json',
+  BASE + 'images/logo.jpg',
+  BASE + 'images/hero-bg.jpg',
+  BASE + 'images/ref.jpg',
+  BASE + 'images/about.svg',
+  BASE + 'images/favicon-32x32.png',
+  BASE + 'images/favicon-16x16.png',
+  BASE + 'images/apple-touch-icon.png',
+  BASE + 'images/android-chrome-192x192.png',
+  BASE + 'images/android-chrome-512x512.png',
+  BASE + 'images/feedback1.jpg',
+  BASE + 'images/feedback2.jpg',
+  BASE + 'images/feedback3.jpg',
+  BASE + 'images/feedback4.jpg'
 ];
 
 self.addEventListener('install', event => {
@@ -55,7 +58,7 @@ self.addEventListener('fetch', event => {
       });
     }).catch(() => {
       if (event.request.destination === 'document') {
-        return caches.match('/index.html');
+        return caches.match(BASE + 'index.html');
       }
     })
   );
