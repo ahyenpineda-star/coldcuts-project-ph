@@ -1,4 +1,4 @@
-const CACHE_NAME = 'coldcuts-v3';
+const CACHE_NAME = 'coldcuts-v4';
 
 const BASE = new URL(self.registration.scope).pathname;
 
