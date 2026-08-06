@@ -1,4 +1,4 @@
-const CACHE_NAME = 'coldcuts-v7';
+const CACHE_NAME = 'coldcuts-v8';
 
 const BASE = new URL(self.registration.scope).pathname;
 
@@ -51,7 +51,13 @@ const ASSETS = [
   BASE + 'images/gallery-new-27.jpg',
   BASE + 'images/gallery-new-28.jpg',
   BASE + 'images/gallery-new-29.jpg',
-  BASE + 'images/gallery-new-30.jpg'
+  BASE + 'images/gallery-new-30.jpg',
+  BASE + 'images/gallery-new-31.jpg',
+  BASE + 'images/gallery-new-32.jpg',
+  BASE + 'images/gallery-new-33.jpg',
+  BASE + 'images/gallery-new-34.jpg',
+  BASE + 'images/gallery-new-35.jpg',
+  BASE + 'images/gallery-new-36.jpg'
 ];
 
 self.addEventListener('install', event => {
